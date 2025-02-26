@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -9,7 +10,7 @@ class AnagramSolverTest {
     private HashMap<String, ArrayList<String>> hm;
 
     @org.junit.jupiter.api.BeforeEach
-    void setUp() {
+    void setUp() throws IOException {
         filename = "src/main/resources/words_alpha.txt";
         hm = AnagramSolver.anagrams(filename);
     }
